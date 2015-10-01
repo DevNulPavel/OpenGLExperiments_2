@@ -38,8 +38,8 @@
 }
 
 -(void)mouseMoved:(float)deltaX deltaY:(float)deltaY{
-    _horisontalAngle += deltaX * X_MOUSE_STEP;
-    _verticalAngle -= deltaY * Y_MOUSE_STEP;
+    _horisontalAngle -= deltaX * X_MOUSE_STEP;
+    _verticalAngle += deltaY * Y_MOUSE_STEP;
     
     if (_verticalAngle > M_PI/2.0 - 0.001) {
         _verticalAngle = M_PI/2.0 - 0.001;
